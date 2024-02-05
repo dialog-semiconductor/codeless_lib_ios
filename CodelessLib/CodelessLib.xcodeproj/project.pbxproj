@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1406154824743EFB00BFCF48 /* CodelessBinEscCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1406154724743EFB00BFCF48 /* CodelessBinEscCommand.m */; };
+		144A2C64291265F900523406 /* DspsFileReceive.m in Sources */ = {isa = PBXBuildFile; fileRef = 144A2C63291265F900523406 /* DspsFileReceive.m */; };
+		14CD2E58242949170013484F /* CodelessLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2E57242949170013484F /* CodelessLib.m */; };
+		14CD2E59242949170013484F /* CodelessLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 14CD2E56242949170013484F /* CodelessLib.h */; };
+		14CD2E88242950930013484F /* CodelessLibConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2E87242950930013484F /* CodelessLibConfig.m */; };
+		14CD2E8B242950AC0013484F /* CodelessLibLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2E89242950AC0013484F /* CodelessLibLog.m */; };
+		14CD2E8E242950BD0013484F /* CodelessLibEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2E8D242950BD0013484F /* CodelessLibEvent.m */; };
+		14CD2E91242950CE0013484F /* CodelessProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2E90242950CE0013484F /* CodelessProfile.m */; };
+		14CD2E94242950D50013484F /* CodelessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2E92242950D50013484F /* CodelessManager.m */; };
+		14CD2E97242950DF0013484F /* CodelessBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2E95242950DF0013484F /* CodelessBluetoothManager.m */; };
+		14CD2E9A242950E90013484F /* CodelessUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2E98242950E90013484F /* CodelessUtil.m */; };
+		14CD2E9D242950F40013484F /* CodelessCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2E9C242950F40013484F /* CodelessCommand.m */; };
+		14CD2EA72431D13B0013484F /* CodelessScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2EA62431D13B0013484F /* CodelessScript.m */; };
+		14CD2EAA2431F78E0013484F /* CodelessBasicCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2EA92431F78E0013484F /* CodelessBasicCommand.m */; };
+		14CD2EAD243200110013484F /* CodelessTimerStartCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2EAC243200110013484F /* CodelessTimerStartCommand.m */; };
+		14CD2EB0243200260013484F /* CodelessTimerStopCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2EAF243200260013484F /* CodelessTimerStopCommand.m */; };
+		14CD2EB32432003C0013484F /* CodelessUartEchoCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2EB22432003C0013484F /* CodelessUartEchoCommand.m */; };
+		14CD2EB6243200520013484F /* CodelessUartPrintCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2EB5243200520013484F /* CodelessUartPrintCommand.m */; };
+		14CD2EB92432904E0013484F /* CodelessCustomCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2EB82432904E0013484F /* CodelessCustomCommand.m */; };
+		14CD2EBC24333F650013484F /* CodelessCommands.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CD2EBB24333F650013484F /* CodelessCommands.m */; };
+		14F009C7244615080052C312 /* CodelessLogFileBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F009C6244615080052C312 /* CodelessLogFileBase.m */; };
+		14F009CA244615360052C312 /* CodelessLogFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F009C9244615360052C312 /* CodelessLogFile.m */; };
+		14F009CD2446154E0052C312 /* DspsRxLogFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F009CC2446154E0052C312 /* DspsRxLogFile.m */; };
+		14F009D1244702770052C312 /* DspsFileSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F009D0244702770052C312 /* DspsFileSend.m */; };
+		14F009D42447028E0052C312 /* DspsPeriodicSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F009D32447028E0052C312 /* DspsPeriodicSend.m */; };
+		930BBA7024365B6500BED0CF /* CodelessErrorReportingCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BBA6F24365B6500BED0CF /* CodelessErrorReportingCommand.m */; };
+		930BBA732437379000BED0CF /* CodelessEventConfigCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BBA712437379000BED0CF /* CodelessEventConfigCommand.m */; };
+		930BBA76243746E700BED0CF /* CodelessFlowControlCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BBA75243746E600BED0CF /* CodelessFlowControlCommand.m */; };
+		930BBA7924375B9600BED0CF /* CodelessGapConnectCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BBA7824375B9500BED0CF /* CodelessGapConnectCommand.m */; };
+		930BBA7C2437777800BED0CF /* CodelessGapDisconnectCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BBA7B2437777700BED0CF /* CodelessGapDisconnectCommand.m */; };
+		930BBA7F24377DB800BED0CF /* CodelessGapScanCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BBA7E24377DB800BED0CF /* CodelessGapScanCommand.m */; };
+		930BBA822437860E00BED0CF /* CodelessGapStatusCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BBA812437860E00BED0CF /* CodelessGapStatusCommand.m */; };
+		930BBA88243790D900BED0CF /* CodelessEventHandlerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BBA86243790D800BED0CF /* CodelessEventHandlerCommand.m */; };
+		930BBA8B2438C8F800BED0CF /* CodelessHeartbeatCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BBA892438C8F800BED0CF /* CodelessHeartbeatCommand.m */; };
+		930BBA8E2438D0C800BED0CF /* CodelessHostSleepCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BBA8D2438D0C700BED0CF /* CodelessHostSleepCommand.m */; };
+		930BBA912438D80300BED0CF /* CodelessI2cConfigCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BBA902438D80300BED0CF /* CodelessI2cConfigCommand.m */; };
+		930BBA942438DC2100BED0CF /* CodelessI2cReadCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 930BBA932438DC2100BED0CF /* CodelessI2cReadCommand.m */; };
+		931FBBB2243489BE005E0902 /* CodelessAdcReadCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 931FBBB1243489BE005E0902 /* CodelessAdcReadCommand.m */; };
+		931FBBB52434A8B0005E0902 /* CodelessAdvertisingDataBaseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 931FBBB42434A8B0005E0902 /* CodelessAdvertisingDataBaseCommand.m */; };
+		93597331243B22E7001AD657 /* CodelessI2cScanCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93597330243B22E7001AD657 /* CodelessI2cScanCommand.m */; };
+		93597334243B373D001AD657 /* CodelessI2cWriteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93597333243B373D001AD657 /* CodelessI2cWriteCommand.m */; };
+		93597337243B3A80001AD657 /* CodelessIoConfigCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93597335243B3A80001AD657 /* CodelessIoConfigCommand.m */; };
+		9359733A243B42EC001AD657 /* CodelessIoStatusCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93597338243B42EC001AD657 /* CodelessIoStatusCommand.m */; };
+		9359733D243B53FD001AD657 /* CodelessMaxMtuCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9359733B243B53FC001AD657 /* CodelessMaxMtuCommand.m */; };
+		93597340243B6FE7001AD657 /* CodelessMemStoreCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9359733E243B6FE7001AD657 /* CodelessMemStoreCommand.m */; };
+		93597343243B78B6001AD657 /* CodelessPinCodeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93597341243B78B6001AD657 /* CodelessPinCodeCommand.m */; };
+		93597346243B7DED001AD657 /* CodelessPeripheralRoleSetCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93597344243B7DED001AD657 /* CodelessPeripheralRoleSetCommand.m */; };
+		93597349243B7E45001AD657 /* CodelessCmdPlayCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93597347243B7E45001AD657 /* CodelessCmdPlayCommand.m */; };
+		9359734C243B7FFE001AD657 /* CodelessPowerLevelConfigCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9359734B243B7FFE001AD657 /* CodelessPowerLevelConfigCommand.m */; };
+		9359734F243B844A001AD657 /* CodelessPulseGenerationCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9359734D243B844A001AD657 /* CodelessPulseGenerationCommand.m */; };
+		93597352243B8487001AD657 /* CodelessRandomNumberCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93597350243B8487001AD657 /* CodelessRandomNumberCommand.m */; };
+		93597357243B8F6E001AD657 /* CodelessResetCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93597355243B8F6E001AD657 /* CodelessResetCommand.m */; };
+		9359735A243B8FC4001AD657 /* CodelessResetIoConfigCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93597358243B8FC4001AD657 /* CodelessResetIoConfigCommand.m */; };
+		9359735D243B9024001AD657 /* CodelessRssiCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9359735C243B9024001AD657 /* CodelessRssiCommand.m */; };
+		93597360243B94BE001AD657 /* CodelessSecurityModeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9359735F243B94BE001AD657 /* CodelessSecurityModeCommand.m */; };
+		93597363243C7803001AD657 /* CodelessSpiConfigCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93597361243C7802001AD657 /* CodelessSpiConfigCommand.m */; };
+		93597366243C85D5001AD657 /* CodelessSpiReadCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93597365243C85D5001AD657 /* CodelessSpiReadCommand.m */; };
+		93597369243C8A17001AD657 /* CodelessSpiTransferCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93597367243C8A16001AD657 /* CodelessSpiTransferCommand.m */; };
+		9359736C243C968C001AD657 /* CodelessSpiWriteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9359736A243C968C001AD657 /* CodelessSpiWriteCommand.m */; };
+		9359736F243C9A14001AD657 /* CodelessCmdStoreCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9359736E243C9A14001AD657 /* CodelessCmdStoreCommand.m */; };
+		93A7D1EE2434D11E00AF61E7 /* CodelessAdvertisingDataCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D1ED2434D11E00AF61E7 /* CodelessAdvertisingDataCommand.m */; };
+		93A7D1F12434E00100AF61E7 /* CodelessAdvertisingResponseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D1EF2434E00100AF61E7 /* CodelessAdvertisingResponseCommand.m */; };
+		93A7D1F42434E4B900AF61E7 /* CodelessAdvertisingStartCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D1F22434E4B800AF61E7 /* CodelessAdvertisingStartCommand.m */; };
+		93A7D1F72434EAAB00AF61E7 /* CodelessAdvertisingStopCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D1F62434EAAB00AF61E7 /* CodelessAdvertisingStopCommand.m */; };
+		93A7D1FA2434EC4200AF61E7 /* CodelessBatteryLevelCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D1F92434EC4200AF61E7 /* CodelessBatteryLevelCommand.m */; };
+		93A7D1FE2434FB5100AF61E7 /* CodelessBaudRateCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D1FC2434FB5100AF61E7 /* CodelessBaudRateCommand.m */; };
+		93A7D2012435031A00AF61E7 /* CodelessBluetoothAddressCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D1FF2435031A00AF61E7 /* CodelessBluetoothAddressCommand.m */; };
+		93A7D2042435E16700AF61E7 /* CodelessBondingEntryClearCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D2022435E16700AF61E7 /* CodelessBondingEntryClearCommand.m */; };
+		93A7D2072435E55C00AF61E7 /* CodelessBondingEntryStatusCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D2052435E55C00AF61E7 /* CodelessBondingEntryStatusCommand.m */; };
+		93A7D20B2435FBE200AF61E7 /* CodelessBondingEntryTransferCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D2092435FBE200AF61E7 /* CodelessBondingEntryTransferCommand.m */; };
+		93A7D20E24361C2800AF61E7 /* CodelessBroadcasterRoleSetCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D20D24361C2800AF61E7 /* CodelessBroadcasterRoleSetCommand.m */; };
+		93A7D21124361CE700AF61E7 /* CodelessBinExitAckCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D20F24361CE700AF61E7 /* CodelessBinExitAckCommand.m */; };
+		93A7D21424361E0C00AF61E7 /* CodelessBinExitCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D21224361E0C00AF61E7 /* CodelessBinExitCommand.m */; };
+		93A7D21724361EAC00AF61E7 /* CodelessBinRequestAckCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D21624361EAC00AF61E7 /* CodelessBinRequestAckCommand.m */; };
+		93A7D21A24361F7F00AF61E7 /* CodelessBinRequestCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D21824361F7E00AF61E7 /* CodelessBinRequestCommand.m */; };
+		93A7D21D2436202700AF61E7 /* CodelessBinResumeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D21C2436202700AF61E7 /* CodelessBinResumeCommand.m */; };
+		93A7D220243620CD00AF61E7 /* CodelessCentralRoleSetCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D21F243620CD00AF61E7 /* CodelessCentralRoleSetCommand.m */; };
+		93A7D2232436214D00AF61E7 /* CodelessConnectionParametersCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D2212436214D00AF61E7 /* CodelessConnectionParametersCommand.m */; };
+		93A7D22624362E3000AF61E7 /* CodelessCursorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D22524362E3000AF61E7 /* CodelessCursorCommand.m */; };
+		93A7D2292436385F00AF61E7 /* CodelessDataLengthEnableCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D2272436385F00AF61E7 /* CodelessDataLengthEnableCommand.m */; };
+		93A7D22C2436419800AF61E7 /* CodelessDeviceInformationCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D22B2436419800AF61E7 /* CodelessDeviceInformationCommand.m */; };
+		93A7D22F243648C100AF61E7 /* CodelessDeviceSleepCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D22D243648C100AF61E7 /* CodelessDeviceSleepCommand.m */; };
+		93A7D23224364F2900AF61E7 /* CodelessCmdGetCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A7D23124364F2900AF61E7 /* CodelessCmdGetCommand.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14CD2E51242949170013484F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				14CD2E59242949170013484F /* CodelessLib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1406154624743EFB00BFCF48 /* CodelessBinEscCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessBinEscCommand.h; sourceTree = "<group>"; };
+		1406154724743EFB00BFCF48 /* CodelessBinEscCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessBinEscCommand.m; sourceTree = "<group>"; };
+		144A2C62291265F900523406 /* DspsFileReceive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DspsFileReceive.h; sourceTree = "<group>"; };
+		144A2C63291265F900523406 /* DspsFileReceive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DspsFileReceive.m; sourceTree = "<group>"; };
+		14CD2E53242949170013484F /* libCodelessLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCodelessLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		14CD2E56242949170013484F /* CodelessLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessLib.h; sourceTree = "<group>"; };
+		14CD2E57242949170013484F /* CodelessLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessLib.m; sourceTree = "<group>"; };
+		14CD2E86242950930013484F /* CodelessLibConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessLibConfig.h; sourceTree = "<group>"; };
+		14CD2E87242950930013484F /* CodelessLibConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessLibConfig.m; sourceTree = "<group>"; };
+		14CD2E89242950AC0013484F /* CodelessLibLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessLibLog.m; sourceTree = "<group>"; };
+		14CD2E8A242950AC0013484F /* CodelessLibLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessLibLog.h; sourceTree = "<group>"; };
+		14CD2E8C242950BD0013484F /* CodelessLibEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessLibEvent.h; sourceTree = "<group>"; };
+		14CD2E8D242950BD0013484F /* CodelessLibEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessLibEvent.m; sourceTree = "<group>"; };
+		14CD2E8F242950CE0013484F /* CodelessProfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessProfile.h; sourceTree = "<group>"; };
+		14CD2E90242950CE0013484F /* CodelessProfile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessProfile.m; sourceTree = "<group>"; };
+		14CD2E92242950D50013484F /* CodelessManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessManager.m; sourceTree = "<group>"; };
+		14CD2E93242950D50013484F /* CodelessManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessManager.h; sourceTree = "<group>"; };
+		14CD2E95242950DF0013484F /* CodelessBluetoothManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessBluetoothManager.m; sourceTree = "<group>"; };
+		14CD2E96242950DF0013484F /* CodelessBluetoothManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessBluetoothManager.h; sourceTree = "<group>"; };
+		14CD2E98242950E90013484F /* CodelessUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessUtil.m; sourceTree = "<group>"; };
+		14CD2E99242950E90013484F /* CodelessUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessUtil.h; sourceTree = "<group>"; };
+		14CD2E9B242950F40013484F /* CodelessCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessCommand.h; sourceTree = "<group>"; };
+		14CD2E9C242950F40013484F /* CodelessCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessCommand.m; sourceTree = "<group>"; };
+		14CD2EA52431D13B0013484F /* CodelessScript.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessScript.h; sourceTree = "<group>"; };
+		14CD2EA62431D13B0013484F /* CodelessScript.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessScript.m; sourceTree = "<group>"; };
+		14CD2EA82431F78E0013484F /* CodelessBasicCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessBasicCommand.h; sourceTree = "<group>"; };
+		14CD2EA92431F78E0013484F /* CodelessBasicCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessBasicCommand.m; sourceTree = "<group>"; };
+		14CD2EAB243200110013484F /* CodelessTimerStartCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessTimerStartCommand.h; sourceTree = "<group>"; };
+		14CD2EAC243200110013484F /* CodelessTimerStartCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessTimerStartCommand.m; sourceTree = "<group>"; };
+		14CD2EAE243200260013484F /* CodelessTimerStopCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessTimerStopCommand.h; sourceTree = "<group>"; };
+		14CD2EAF243200260013484F /* CodelessTimerStopCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessTimerStopCommand.m; sourceTree = "<group>"; };
+		14CD2EB12432003C0013484F /* CodelessUartEchoCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessUartEchoCommand.h; sourceTree = "<group>"; };
+		14CD2EB22432003C0013484F /* CodelessUartEchoCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessUartEchoCommand.m; sourceTree = "<group>"; };
+		14CD2EB4243200520013484F /* CodelessUartPrintCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessUartPrintCommand.h; sourceTree = "<group>"; };
+		14CD2EB5243200520013484F /* CodelessUartPrintCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessUartPrintCommand.m; sourceTree = "<group>"; };
+		14CD2EB72432904E0013484F /* CodelessCustomCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessCustomCommand.h; sourceTree = "<group>"; };
+		14CD2EB82432904E0013484F /* CodelessCustomCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessCustomCommand.m; sourceTree = "<group>"; };
+		14CD2EBA24333F650013484F /* CodelessCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessCommands.h; sourceTree = "<group>"; };
+		14CD2EBB24333F650013484F /* CodelessCommands.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessCommands.m; sourceTree = "<group>"; };
+		14F009C5244615080052C312 /* CodelessLogFileBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessLogFileBase.h; sourceTree = "<group>"; };
+		14F009C6244615080052C312 /* CodelessLogFileBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessLogFileBase.m; sourceTree = "<group>"; };
+		14F009C8244615360052C312 /* CodelessLogFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodelessLogFile.h; sourceTree = "<group>"; };
+		14F009C9244615360052C312 /* CodelessLogFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodelessLogFile.m; sourceTree = "<group>"; };
+		14F009CB2446154E0052C312 /* DspsRxLogFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DspsRxLogFile.h; sourceTree = "<group>"; };
+		14F009CC2446154E0052C312 /* DspsRxLogFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DspsRxLogFile.m; sourceTree = "<group>"; };
+		14F009CF244702770052C312 /* DspsFileSend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DspsFileSend.h; sourceTree = "<group>"; };
+		14F009D0244702770052C312 /* DspsFileSend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DspsFileSend.m; sourceTree = "<group>"; };
+		14F009D22447028E0052C312 /* DspsPeriodicSend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DspsPeriodicSend.h; sourceTree = "<group>"; };
+		14F009D32447028E0052C312 /* DspsPeriodicSend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DspsPeriodicSend.m; sourceTree = "<group>"; };
+		930BBA6E24365B6500BED0CF /* CodelessErrorReportingCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessErrorReportingCommand.h; sourceTree = "<group>"; };
+		930BBA6F24365B6500BED0CF /* CodelessErrorReportingCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessErrorReportingCommand.m; sourceTree = "<group>"; };
+		930BBA712437379000BED0CF /* CodelessEventConfigCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessEventConfigCommand.m; sourceTree = "<group>"; };
+		930BBA722437379000BED0CF /* CodelessEventConfigCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessEventConfigCommand.h; sourceTree = "<group>"; };
+		930BBA74243746E600BED0CF /* CodelessFlowControlCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessFlowControlCommand.h; sourceTree = "<group>"; };
+		930BBA75243746E600BED0CF /* CodelessFlowControlCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessFlowControlCommand.m; sourceTree = "<group>"; };
+		930BBA7724375B9500BED0CF /* CodelessGapConnectCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessGapConnectCommand.h; sourceTree = "<group>"; };
+		930BBA7824375B9500BED0CF /* CodelessGapConnectCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessGapConnectCommand.m; sourceTree = "<group>"; };
+		930BBA7A2437777700BED0CF /* CodelessGapDisconnectCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessGapDisconnectCommand.h; sourceTree = "<group>"; };
+		930BBA7B2437777700BED0CF /* CodelessGapDisconnectCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessGapDisconnectCommand.m; sourceTree = "<group>"; };
+		930BBA7D24377DB800BED0CF /* CodelessGapScanCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessGapScanCommand.h; sourceTree = "<group>"; };
+		930BBA7E24377DB800BED0CF /* CodelessGapScanCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessGapScanCommand.m; sourceTree = "<group>"; };
+		930BBA802437860D00BED0CF /* CodelessGapStatusCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessGapStatusCommand.h; sourceTree = "<group>"; };
+		930BBA812437860E00BED0CF /* CodelessGapStatusCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessGapStatusCommand.m; sourceTree = "<group>"; };
+		930BBA86243790D800BED0CF /* CodelessEventHandlerCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessEventHandlerCommand.m; sourceTree = "<group>"; };
+		930BBA87243790D900BED0CF /* CodelessEventHandlerCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessEventHandlerCommand.h; sourceTree = "<group>"; };
+		930BBA892438C8F800BED0CF /* CodelessHeartbeatCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessHeartbeatCommand.m; sourceTree = "<group>"; };
+		930BBA8A2438C8F800BED0CF /* CodelessHeartbeatCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessHeartbeatCommand.h; sourceTree = "<group>"; };
+		930BBA8C2438D0C700BED0CF /* CodelessHostSleepCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessHostSleepCommand.h; sourceTree = "<group>"; };
+		930BBA8D2438D0C700BED0CF /* CodelessHostSleepCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessHostSleepCommand.m; sourceTree = "<group>"; };
+		930BBA8F2438D80300BED0CF /* CodelessI2cConfigCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessI2cConfigCommand.h; sourceTree = "<group>"; };
+		930BBA902438D80300BED0CF /* CodelessI2cConfigCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessI2cConfigCommand.m; sourceTree = "<group>"; };
+		930BBA922438DC2100BED0CF /* CodelessI2cReadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessI2cReadCommand.h; sourceTree = "<group>"; };
+		930BBA932438DC2100BED0CF /* CodelessI2cReadCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessI2cReadCommand.m; sourceTree = "<group>"; };
+		931FBBB0243489BE005E0902 /* CodelessAdcReadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessAdcReadCommand.h; sourceTree = "<group>"; };
+		931FBBB1243489BE005E0902 /* CodelessAdcReadCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessAdcReadCommand.m; sourceTree = "<group>"; };
+		931FBBB32434A8B0005E0902 /* CodelessAdvertisingDataBaseCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessAdvertisingDataBaseCommand.h; sourceTree = "<group>"; };
+		931FBBB42434A8B0005E0902 /* CodelessAdvertisingDataBaseCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessAdvertisingDataBaseCommand.m; sourceTree = "<group>"; };
+		9359732F243B22E7001AD657 /* CodelessI2cScanCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessI2cScanCommand.h; sourceTree = "<group>"; };
+		93597330243B22E7001AD657 /* CodelessI2cScanCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessI2cScanCommand.m; sourceTree = "<group>"; };
+		93597332243B373D001AD657 /* CodelessI2cWriteCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessI2cWriteCommand.h; sourceTree = "<group>"; };
+		93597333243B373D001AD657 /* CodelessI2cWriteCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessI2cWriteCommand.m; sourceTree = "<group>"; };
+		93597335243B3A80001AD657 /* CodelessIoConfigCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessIoConfigCommand.m; sourceTree = "<group>"; };
+		93597336243B3A80001AD657 /* CodelessIoConfigCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessIoConfigCommand.h; sourceTree = "<group>"; };
+		93597338243B42EC001AD657 /* CodelessIoStatusCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessIoStatusCommand.m; sourceTree = "<group>"; };
+		93597339243B42EC001AD657 /* CodelessIoStatusCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessIoStatusCommand.h; sourceTree = "<group>"; };
+		9359733B243B53FC001AD657 /* CodelessMaxMtuCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessMaxMtuCommand.m; sourceTree = "<group>"; };
+		9359733C243B53FD001AD657 /* CodelessMaxMtuCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessMaxMtuCommand.h; sourceTree = "<group>"; };
+		9359733E243B6FE7001AD657 /* CodelessMemStoreCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessMemStoreCommand.m; sourceTree = "<group>"; };
+		9359733F243B6FE7001AD657 /* CodelessMemStoreCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessMemStoreCommand.h; sourceTree = "<group>"; };
+		93597341243B78B6001AD657 /* CodelessPinCodeCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessPinCodeCommand.m; sourceTree = "<group>"; };
+		93597342243B78B6001AD657 /* CodelessPinCodeCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessPinCodeCommand.h; sourceTree = "<group>"; };
+		93597344243B7DED001AD657 /* CodelessPeripheralRoleSetCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessPeripheralRoleSetCommand.m; sourceTree = "<group>"; };
+		93597345243B7DED001AD657 /* CodelessPeripheralRoleSetCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessPeripheralRoleSetCommand.h; sourceTree = "<group>"; };
+		93597347243B7E45001AD657 /* CodelessCmdPlayCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessCmdPlayCommand.m; sourceTree = "<group>"; };
+		93597348243B7E45001AD657 /* CodelessCmdPlayCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessCmdPlayCommand.h; sourceTree = "<group>"; };
+		9359734A243B7FFE001AD657 /* CodelessPowerLevelConfigCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessPowerLevelConfigCommand.h; sourceTree = "<group>"; };
+		9359734B243B7FFE001AD657 /* CodelessPowerLevelConfigCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessPowerLevelConfigCommand.m; sourceTree = "<group>"; };
+		9359734D243B844A001AD657 /* CodelessPulseGenerationCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessPulseGenerationCommand.m; sourceTree = "<group>"; };
+		9359734E243B844A001AD657 /* CodelessPulseGenerationCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessPulseGenerationCommand.h; sourceTree = "<group>"; };
+		93597350243B8487001AD657 /* CodelessRandomNumberCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessRandomNumberCommand.m; sourceTree = "<group>"; };
+		93597351243B8487001AD657 /* CodelessRandomNumberCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessRandomNumberCommand.h; sourceTree = "<group>"; };
+		93597355243B8F6E001AD657 /* CodelessResetCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessResetCommand.m; sourceTree = "<group>"; };
+		93597356243B8F6E001AD657 /* CodelessResetCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessResetCommand.h; sourceTree = "<group>"; };
+		93597358243B8FC4001AD657 /* CodelessResetIoConfigCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessResetIoConfigCommand.m; sourceTree = "<group>"; };
+		93597359243B8FC4001AD657 /* CodelessResetIoConfigCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessResetIoConfigCommand.h; sourceTree = "<group>"; };
+		9359735B243B9024001AD657 /* CodelessRssiCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessRssiCommand.h; sourceTree = "<group>"; };
+		9359735C243B9024001AD657 /* CodelessRssiCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessRssiCommand.m; sourceTree = "<group>"; };
+		9359735E243B94BE001AD657 /* CodelessSecurityModeCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessSecurityModeCommand.h; sourceTree = "<group>"; };
+		9359735F243B94BE001AD657 /* CodelessSecurityModeCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessSecurityModeCommand.m; sourceTree = "<group>"; };
+		93597361243C7802001AD657 /* CodelessSpiConfigCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessSpiConfigCommand.m; sourceTree = "<group>"; };
+		93597362243C7803001AD657 /* CodelessSpiConfigCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessSpiConfigCommand.h; sourceTree = "<group>"; };
+		93597364243C85D5001AD657 /* CodelessSpiReadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessSpiReadCommand.h; sourceTree = "<group>"; };
+		93597365243C85D5001AD657 /* CodelessSpiReadCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessSpiReadCommand.m; sourceTree = "<group>"; };
+		93597367243C8A16001AD657 /* CodelessSpiTransferCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessSpiTransferCommand.m; sourceTree = "<group>"; };
+		93597368243C8A17001AD657 /* CodelessSpiTransferCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessSpiTransferCommand.h; sourceTree = "<group>"; };
+		9359736A243C968C001AD657 /* CodelessSpiWriteCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessSpiWriteCommand.m; sourceTree = "<group>"; };
+		9359736B243C968C001AD657 /* CodelessSpiWriteCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessSpiWriteCommand.h; sourceTree = "<group>"; };
+		9359736D243C9A14001AD657 /* CodelessCmdStoreCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessCmdStoreCommand.h; sourceTree = "<group>"; };
+		9359736E243C9A14001AD657 /* CodelessCmdStoreCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessCmdStoreCommand.m; sourceTree = "<group>"; };
+		93A7D1EC2434D11E00AF61E7 /* CodelessAdvertisingDataCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessAdvertisingDataCommand.h; sourceTree = "<group>"; };
+		93A7D1ED2434D11E00AF61E7 /* CodelessAdvertisingDataCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessAdvertisingDataCommand.m; sourceTree = "<group>"; };
+		93A7D1EF2434E00100AF61E7 /* CodelessAdvertisingResponseCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessAdvertisingResponseCommand.m; sourceTree = "<group>"; };
+		93A7D1F02434E00100AF61E7 /* CodelessAdvertisingResponseCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessAdvertisingResponseCommand.h; sourceTree = "<group>"; };
+		93A7D1F22434E4B800AF61E7 /* CodelessAdvertisingStartCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessAdvertisingStartCommand.m; sourceTree = "<group>"; };
+		93A7D1F32434E4B800AF61E7 /* CodelessAdvertisingStartCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessAdvertisingStartCommand.h; sourceTree = "<group>"; };
+		93A7D1F52434EAAB00AF61E7 /* CodelessAdvertisingStopCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessAdvertisingStopCommand.h; sourceTree = "<group>"; };
+		93A7D1F62434EAAB00AF61E7 /* CodelessAdvertisingStopCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessAdvertisingStopCommand.m; sourceTree = "<group>"; };
+		93A7D1F82434EC4100AF61E7 /* CodelessBatteryLevelCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessBatteryLevelCommand.h; sourceTree = "<group>"; };
+		93A7D1F92434EC4200AF61E7 /* CodelessBatteryLevelCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessBatteryLevelCommand.m; sourceTree = "<group>"; };
+		93A7D1FC2434FB5100AF61E7 /* CodelessBaudRateCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessBaudRateCommand.m; sourceTree = "<group>"; };
+		93A7D1FD2434FB5100AF61E7 /* CodelessBaudRateCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessBaudRateCommand.h; sourceTree = "<group>"; };
+		93A7D1FF2435031A00AF61E7 /* CodelessBluetoothAddressCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessBluetoothAddressCommand.m; sourceTree = "<group>"; };
+		93A7D2002435031A00AF61E7 /* CodelessBluetoothAddressCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessBluetoothAddressCommand.h; sourceTree = "<group>"; };
+		93A7D2022435E16700AF61E7 /* CodelessBondingEntryClearCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessBondingEntryClearCommand.m; sourceTree = "<group>"; };
+		93A7D2032435E16700AF61E7 /* CodelessBondingEntryClearCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessBondingEntryClearCommand.h; sourceTree = "<group>"; };
+		93A7D2052435E55C00AF61E7 /* CodelessBondingEntryStatusCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessBondingEntryStatusCommand.m; sourceTree = "<group>"; };
+		93A7D2062435E55C00AF61E7 /* CodelessBondingEntryStatusCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessBondingEntryStatusCommand.h; sourceTree = "<group>"; };
+		93A7D2092435FBE200AF61E7 /* CodelessBondingEntryTransferCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessBondingEntryTransferCommand.m; sourceTree = "<group>"; };
+		93A7D20A2435FBE200AF61E7 /* CodelessBondingEntryTransferCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessBondingEntryTransferCommand.h; sourceTree = "<group>"; };
+		93A7D20C24361C2700AF61E7 /* CodelessBroadcasterRoleSetCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessBroadcasterRoleSetCommand.h; sourceTree = "<group>"; };
+		93A7D20D24361C2800AF61E7 /* CodelessBroadcasterRoleSetCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessBroadcasterRoleSetCommand.m; sourceTree = "<group>"; };
+		93A7D20F24361CE700AF61E7 /* CodelessBinExitAckCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessBinExitAckCommand.m; sourceTree = "<group>"; };
+		93A7D21024361CE700AF61E7 /* CodelessBinExitAckCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessBinExitAckCommand.h; sourceTree = "<group>"; };
+		93A7D21224361E0C00AF61E7 /* CodelessBinExitCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessBinExitCommand.m; sourceTree = "<group>"; };
+		93A7D21324361E0C00AF61E7 /* CodelessBinExitCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessBinExitCommand.h; sourceTree = "<group>"; };
+		93A7D21524361EAC00AF61E7 /* CodelessBinRequestAckCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessBinRequestAckCommand.h; sourceTree = "<group>"; };
+		93A7D21624361EAC00AF61E7 /* CodelessBinRequestAckCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessBinRequestAckCommand.m; sourceTree = "<group>"; };
+		93A7D21824361F7E00AF61E7 /* CodelessBinRequestCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessBinRequestCommand.m; sourceTree = "<group>"; };
+		93A7D21924361F7F00AF61E7 /* CodelessBinRequestCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessBinRequestCommand.h; sourceTree = "<group>"; };
+		93A7D21B2436202700AF61E7 /* CodelessBinResumeCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessBinResumeCommand.h; sourceTree = "<group>"; };
+		93A7D21C2436202700AF61E7 /* CodelessBinResumeCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessBinResumeCommand.m; sourceTree = "<group>"; };
+		93A7D21E243620CD00AF61E7 /* CodelessCentralRoleSetCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessCentralRoleSetCommand.h; sourceTree = "<group>"; };
+		93A7D21F243620CD00AF61E7 /* CodelessCentralRoleSetCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessCentralRoleSetCommand.m; sourceTree = "<group>"; };
+		93A7D2212436214D00AF61E7 /* CodelessConnectionParametersCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessConnectionParametersCommand.m; sourceTree = "<group>"; };
+		93A7D2222436214D00AF61E7 /* CodelessConnectionParametersCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessConnectionParametersCommand.h; sourceTree = "<group>"; };
+		93A7D22424362E3000AF61E7 /* CodelessCursorCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessCursorCommand.h; sourceTree = "<group>"; };
+		93A7D22524362E3000AF61E7 /* CodelessCursorCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessCursorCommand.m; sourceTree = "<group>"; };
+		93A7D2272436385F00AF61E7 /* CodelessDataLengthEnableCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessDataLengthEnableCommand.m; sourceTree = "<group>"; };
+		93A7D2282436385F00AF61E7 /* CodelessDataLengthEnableCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessDataLengthEnableCommand.h; sourceTree = "<group>"; };
+		93A7D22A2436419800AF61E7 /* CodelessDeviceInformationCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessDeviceInformationCommand.h; sourceTree = "<group>"; };
+		93A7D22B2436419800AF61E7 /* CodelessDeviceInformationCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessDeviceInformationCommand.m; sourceTree = "<group>"; };
+		93A7D22D243648C100AF61E7 /* CodelessDeviceSleepCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessDeviceSleepCommand.m; sourceTree = "<group>"; };
+		93A7D22E243648C100AF61E7 /* CodelessDeviceSleepCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessDeviceSleepCommand.h; sourceTree = "<group>"; };
+		93A7D23024364F2800AF61E7 /* CodelessCmdGetCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodelessCmdGetCommand.h; sourceTree = "<group>"; };
+		93A7D23124364F2900AF61E7 /* CodelessCmdGetCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodelessCmdGetCommand.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14CD2E50242949170013484F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14CD2E4A242949170013484F = {
+			isa = PBXGroup;
+			children = (
+				14CD2E55242949170013484F /* CodelessLib */,
+				14CD2E54242949170013484F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14CD2E54242949170013484F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14CD2E53242949170013484F /* libCodelessLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14CD2E55242949170013484F /* CodelessLib */ = {
+			isa = PBXGroup;
+			children = (
+				14CD2E6924294A810013484F /* command */,
+				14F009CE244702530052C312 /* dsps */,
+				14F009C4244614C80052C312 /* log */,
+				14CD2E56242949170013484F /* CodelessLib.h */,
+				14CD2E57242949170013484F /* CodelessLib.m */,
+				14CD2E86242950930013484F /* CodelessLibConfig.h */,
+				14CD2E87242950930013484F /* CodelessLibConfig.m */,
+				14CD2E8A242950AC0013484F /* CodelessLibLog.h */,
+				14CD2E89242950AC0013484F /* CodelessLibLog.m */,
+				14CD2E8C242950BD0013484F /* CodelessLibEvent.h */,
+				14CD2E8D242950BD0013484F /* CodelessLibEvent.m */,
+				14CD2E8F242950CE0013484F /* CodelessProfile.h */,
+				14CD2E90242950CE0013484F /* CodelessProfile.m */,
+				14CD2E93242950D50013484F /* CodelessManager.h */,
+				14CD2E92242950D50013484F /* CodelessManager.m */,
+				14CD2E96242950DF0013484F /* CodelessBluetoothManager.h */,
+				14CD2E95242950DF0013484F /* CodelessBluetoothManager.m */,
+				14CD2EBA24333F650013484F /* CodelessCommands.h */,
+				14CD2EBB24333F650013484F /* CodelessCommands.m */,
+				14CD2EA52431D13B0013484F /* CodelessScript.h */,
+				14CD2EA62431D13B0013484F /* CodelessScript.m */,
+				14CD2E99242950E90013484F /* CodelessUtil.h */,
+				14CD2E98242950E90013484F /* CodelessUtil.m */,
+			);
+			path = CodelessLib;
+			sourceTree = "<group>";
+		};
+		14CD2E6924294A810013484F /* command */ = {
+			isa = PBXGroup;
+			children = (
+				14CD2E9B242950F40013484F /* CodelessCommand.h */,
+				14CD2E9C242950F40013484F /* CodelessCommand.m */,
+				931FBBB0243489BE005E0902 /* CodelessAdcReadCommand.h */,
+				931FBBB1243489BE005E0902 /* CodelessAdcReadCommand.m */,
+				931FBBB32434A8B0005E0902 /* CodelessAdvertisingDataBaseCommand.h */,
+				931FBBB42434A8B0005E0902 /* CodelessAdvertisingDataBaseCommand.m */,
+				93A7D1EC2434D11E00AF61E7 /* CodelessAdvertisingDataCommand.h */,
+				93A7D1ED2434D11E00AF61E7 /* CodelessAdvertisingDataCommand.m */,
+				93A7D1F02434E00100AF61E7 /* CodelessAdvertisingResponseCommand.h */,
+				93A7D1EF2434E00100AF61E7 /* CodelessAdvertisingResponseCommand.m */,
+				93A7D1F32434E4B800AF61E7 /* CodelessAdvertisingStartCommand.h */,
+				93A7D1F22434E4B800AF61E7 /* CodelessAdvertisingStartCommand.m */,
+				93A7D1F52434EAAB00AF61E7 /* CodelessAdvertisingStopCommand.h */,
+				93A7D1F62434EAAB00AF61E7 /* CodelessAdvertisingStopCommand.m */,
+				14CD2EA82431F78E0013484F /* CodelessBasicCommand.h */,
+				14CD2EA92431F78E0013484F /* CodelessBasicCommand.m */,
+				93A7D1F82434EC4100AF61E7 /* CodelessBatteryLevelCommand.h */,
+				93A7D1F92434EC4200AF61E7 /* CodelessBatteryLevelCommand.m */,
+				93A7D1FD2434FB5100AF61E7 /* CodelessBaudRateCommand.h */,
+				93A7D1FC2434FB5100AF61E7 /* CodelessBaudRateCommand.m */,
+				1406154624743EFB00BFCF48 /* CodelessBinEscCommand.h */,
+				1406154724743EFB00BFCF48 /* CodelessBinEscCommand.m */,
+				93A7D21024361CE700AF61E7 /* CodelessBinExitAckCommand.h */,
+				93A7D20F24361CE700AF61E7 /* CodelessBinExitAckCommand.m */,
+				93A7D21324361E0C00AF61E7 /* CodelessBinExitCommand.h */,
+				93A7D21224361E0C00AF61E7 /* CodelessBinExitCommand.m */,
+				93A7D21524361EAC00AF61E7 /* CodelessBinRequestAckCommand.h */,
+				93A7D21624361EAC00AF61E7 /* CodelessBinRequestAckCommand.m */,
+				93A7D21924361F7F00AF61E7 /* CodelessBinRequestCommand.h */,
+				93A7D21824361F7E00AF61E7 /* CodelessBinRequestCommand.m */,
+				93A7D21B2436202700AF61E7 /* CodelessBinResumeCommand.h */,
+				93A7D21C2436202700AF61E7 /* CodelessBinResumeCommand.m */,
+				93A7D2002435031A00AF61E7 /* CodelessBluetoothAddressCommand.h */,
+				93A7D1FF2435031A00AF61E7 /* CodelessBluetoothAddressCommand.m */,
+				93A7D2032435E16700AF61E7 /* CodelessBondingEntryClearCommand.h */,
+				93A7D2022435E16700AF61E7 /* CodelessBondingEntryClearCommand.m */,
+				93A7D2062435E55C00AF61E7 /* CodelessBondingEntryStatusCommand.h */,
+				93A7D2052435E55C00AF61E7 /* CodelessBondingEntryStatusCommand.m */,
+				93A7D20A2435FBE200AF61E7 /* CodelessBondingEntryTransferCommand.h */,
+				93A7D2092435FBE200AF61E7 /* CodelessBondingEntryTransferCommand.m */,
+				93A7D20C24361C2700AF61E7 /* CodelessBroadcasterRoleSetCommand.h */,
+				93A7D20D24361C2800AF61E7 /* CodelessBroadcasterRoleSetCommand.m */,
+				93A7D21E243620CD00AF61E7 /* CodelessCentralRoleSetCommand.h */,
+				93A7D21F243620CD00AF61E7 /* CodelessCentralRoleSetCommand.m */,
+				93A7D23024364F2800AF61E7 /* CodelessCmdGetCommand.h */,
+				93A7D23124364F2900AF61E7 /* CodelessCmdGetCommand.m */,
+				93597348243B7E45001AD657 /* CodelessCmdPlayCommand.h */,
+				93597347243B7E45001AD657 /* CodelessCmdPlayCommand.m */,
+				9359736D243C9A14001AD657 /* CodelessCmdStoreCommand.h */,
+				9359736E243C9A14001AD657 /* CodelessCmdStoreCommand.m */,
+				93A7D2222436214D00AF61E7 /* CodelessConnectionParametersCommand.h */,
+				93A7D2212436214D00AF61E7 /* CodelessConnectionParametersCommand.m */,
+				93A7D22424362E3000AF61E7 /* CodelessCursorCommand.h */,
+				93A7D22524362E3000AF61E7 /* CodelessCursorCommand.m */,
+				93A7D2282436385F00AF61E7 /* CodelessDataLengthEnableCommand.h */,
+				93A7D2272436385F00AF61E7 /* CodelessDataLengthEnableCommand.m */,
+				93A7D22A2436419800AF61E7 /* CodelessDeviceInformationCommand.h */,
+				93A7D22B2436419800AF61E7 /* CodelessDeviceInformationCommand.m */,
+				93A7D22E243648C100AF61E7 /* CodelessDeviceSleepCommand.h */,
+				93A7D22D243648C100AF61E7 /* CodelessDeviceSleepCommand.m */,
+				930BBA6E24365B6500BED0CF /* CodelessErrorReportingCommand.h */,
+				930BBA6F24365B6500BED0CF /* CodelessErrorReportingCommand.m */,
+				930BBA722437379000BED0CF /* CodelessEventConfigCommand.h */,
+				930BBA712437379000BED0CF /* CodelessEventConfigCommand.m */,
+				930BBA87243790D900BED0CF /* CodelessEventHandlerCommand.h */,
+				930BBA86243790D800BED0CF /* CodelessEventHandlerCommand.m */,
+				930BBA74243746E600BED0CF /* CodelessFlowControlCommand.h */,
+				930BBA75243746E600BED0CF /* CodelessFlowControlCommand.m */,
+				930BBA7724375B9500BED0CF /* CodelessGapConnectCommand.h */,
+				930BBA7824375B9500BED0CF /* CodelessGapConnectCommand.m */,
+				930BBA7A2437777700BED0CF /* CodelessGapDisconnectCommand.h */,
+				930BBA7B2437777700BED0CF /* CodelessGapDisconnectCommand.m */,
+				930BBA7D24377DB800BED0CF /* CodelessGapScanCommand.h */,
+				930BBA7E24377DB800BED0CF /* CodelessGapScanCommand.m */,
+				930BBA802437860D00BED0CF /* CodelessGapStatusCommand.h */,
+				930BBA812437860E00BED0CF /* CodelessGapStatusCommand.m */,
+				930BBA8A2438C8F800BED0CF /* CodelessHeartbeatCommand.h */,
+				930BBA892438C8F800BED0CF /* CodelessHeartbeatCommand.m */,
+				930BBA8C2438D0C700BED0CF /* CodelessHostSleepCommand.h */,
+				930BBA8D2438D0C700BED0CF /* CodelessHostSleepCommand.m */,
+				930BBA8F2438D80300BED0CF /* CodelessI2cConfigCommand.h */,
+				930BBA902438D80300BED0CF /* CodelessI2cConfigCommand.m */,
+				930BBA922438DC2100BED0CF /* CodelessI2cReadCommand.h */,
+				930BBA932438DC2100BED0CF /* CodelessI2cReadCommand.m */,
+				9359732F243B22E7001AD657 /* CodelessI2cScanCommand.h */,
+				93597330243B22E7001AD657 /* CodelessI2cScanCommand.m */,
+				93597332243B373D001AD657 /* CodelessI2cWriteCommand.h */,
+				93597333243B373D001AD657 /* CodelessI2cWriteCommand.m */,
+				93597336243B3A80001AD657 /* CodelessIoConfigCommand.h */,
+				93597335243B3A80001AD657 /* CodelessIoConfigCommand.m */,
+				93597339243B42EC001AD657 /* CodelessIoStatusCommand.h */,
+				93597338243B42EC001AD657 /* CodelessIoStatusCommand.m */,
+				9359733C243B53FD001AD657 /* CodelessMaxMtuCommand.h */,
+				9359733B243B53FC001AD657 /* CodelessMaxMtuCommand.m */,
+				9359733F243B6FE7001AD657 /* CodelessMemStoreCommand.h */,
+				9359733E243B6FE7001AD657 /* CodelessMemStoreCommand.m */,
+				93597345243B7DED001AD657 /* CodelessPeripheralRoleSetCommand.h */,
+				93597344243B7DED001AD657 /* CodelessPeripheralRoleSetCommand.m */,
+				93597342243B78B6001AD657 /* CodelessPinCodeCommand.h */,
+				93597341243B78B6001AD657 /* CodelessPinCodeCommand.m */,
+				9359734A243B7FFE001AD657 /* CodelessPowerLevelConfigCommand.h */,
+				9359734B243B7FFE001AD657 /* CodelessPowerLevelConfigCommand.m */,
+				9359734E243B844A001AD657 /* CodelessPulseGenerationCommand.h */,
+				9359734D243B844A001AD657 /* CodelessPulseGenerationCommand.m */,
+				93597351243B8487001AD657 /* CodelessRandomNumberCommand.h */,
+				93597350243B8487001AD657 /* CodelessRandomNumberCommand.m */,
+				93597356243B8F6E001AD657 /* CodelessResetCommand.h */,
+				93597355243B8F6E001AD657 /* CodelessResetCommand.m */,
+				93597359243B8FC4001AD657 /* CodelessResetIoConfigCommand.h */,
+				93597358243B8FC4001AD657 /* CodelessResetIoConfigCommand.m */,
+				9359735B243B9024001AD657 /* CodelessRssiCommand.h */,
+				9359735C243B9024001AD657 /* CodelessRssiCommand.m */,
+				9359735E243B94BE001AD657 /* CodelessSecurityModeCommand.h */,
+				9359735F243B94BE001AD657 /* CodelessSecurityModeCommand.m */,
+				93597362243C7803001AD657 /* CodelessSpiConfigCommand.h */,
+				93597361243C7802001AD657 /* CodelessSpiConfigCommand.m */,
+				93597364243C85D5001AD657 /* CodelessSpiReadCommand.h */,
+				93597365243C85D5001AD657 /* CodelessSpiReadCommand.m */,
+				93597368243C8A17001AD657 /* CodelessSpiTransferCommand.h */,
+				93597367243C8A16001AD657 /* CodelessSpiTransferCommand.m */,
+				9359736B243C968C001AD657 /* CodelessSpiWriteCommand.h */,
+				9359736A243C968C001AD657 /* CodelessSpiWriteCommand.m */,
+				14CD2EAB243200110013484F /* CodelessTimerStartCommand.h */,
+				14CD2EAC243200110013484F /* CodelessTimerStartCommand.m */,
+				14CD2EAE243200260013484F /* CodelessTimerStopCommand.h */,
+				14CD2EAF243200260013484F /* CodelessTimerStopCommand.m */,
+				14CD2EB12432003C0013484F /* CodelessUartEchoCommand.h */,
+				14CD2EB22432003C0013484F /* CodelessUartEchoCommand.m */,
+				14CD2EB4243200520013484F /* CodelessUartPrintCommand.h */,
+				14CD2EB5243200520013484F /* CodelessUartPrintCommand.m */,
+				14CD2EB72432904E0013484F /* CodelessCustomCommand.h */,
+				14CD2EB82432904E0013484F /* CodelessCustomCommand.m */,
+			);
+			path = command;
+			sourceTree = "<group>";
+		};
+		14F009C4244614C80052C312 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				14F009C5244615080052C312 /* CodelessLogFileBase.h */,
+				14F009C6244615080052C312 /* CodelessLogFileBase.m */,
+				14F009C8244615360052C312 /* CodelessLogFile.h */,
+				14F009C9244615360052C312 /* CodelessLogFile.m */,
+				14F009CB2446154E0052C312 /* DspsRxLogFile.h */,
+				14F009CC2446154E0052C312 /* DspsRxLogFile.m */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		14F009CE244702530052C312 /* dsps */ = {
+			isa = PBXGroup;
+			children = (
+				14F009CF244702770052C312 /* DspsFileSend.h */,
+				14F009D0244702770052C312 /* DspsFileSend.m */,
+				144A2C62291265F900523406 /* DspsFileReceive.h */,
+				144A2C63291265F900523406 /* DspsFileReceive.m */,
+				14F009D22447028E0052C312 /* DspsPeriodicSend.h */,
+				14F009D32447028E0052C312 /* DspsPeriodicSend.m */,
+			);
+			path = dsps;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14CD2E52242949170013484F /* CodelessLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14CD2E5C242949170013484F /* Build configuration list for PBXNativeTarget "CodelessLib" */;
+			buildPhases = (
+				14CD2E4F242949170013484F /* Sources */,
+				14CD2E50242949170013484F /* Frameworks */,
+				14CD2E51242949170013484F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodelessLib;
+			productName = CodelessLib;
+			productReference = 14CD2E53242949170013484F /* libCodelessLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14CD2E4B242949170013484F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Renesas Electronics";
+				TargetAttributes = {
+					14CD2E52242949170013484F = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 14CD2E4E242949170013484F /* Build configuration list for PBXProject "CodelessLib" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14CD2E4A242949170013484F;
+			productRefGroup = 14CD2E54242949170013484F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14CD2E52242949170013484F /* CodelessLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14CD2E4F242949170013484F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14CD2E91242950CE0013484F /* CodelessProfile.m in Sources */,
+				93597352243B8487001AD657 /* CodelessRandomNumberCommand.m in Sources */,
+				14CD2E9A242950E90013484F /* CodelessUtil.m in Sources */,
+				14F009C7244615080052C312 /* CodelessLogFileBase.m in Sources */,
+				93597337243B3A80001AD657 /* CodelessIoConfigCommand.m in Sources */,
+				93A7D1F72434EAAB00AF61E7 /* CodelessAdvertisingStopCommand.m in Sources */,
+				931FBBB2243489BE005E0902 /* CodelessAdcReadCommand.m in Sources */,
+				930BBA88243790D900BED0CF /* CodelessEventHandlerCommand.m in Sources */,
+				930BBA76243746E700BED0CF /* CodelessFlowControlCommand.m in Sources */,
+				930BBA7C2437777800BED0CF /* CodelessGapDisconnectCommand.m in Sources */,
+				14F009CD2446154E0052C312 /* DspsRxLogFile.m in Sources */,
+				14CD2EA72431D13B0013484F /* CodelessScript.m in Sources */,
+				9359733A243B42EC001AD657 /* CodelessIoStatusCommand.m in Sources */,
+				93A7D1EE2434D11E00AF61E7 /* CodelessAdvertisingDataCommand.m in Sources */,
+				14CD2E8E242950BD0013484F /* CodelessLibEvent.m in Sources */,
+				14CD2EB32432003C0013484F /* CodelessUartEchoCommand.m in Sources */,
+				930BBA732437379000BED0CF /* CodelessEventConfigCommand.m in Sources */,
+				144A2C64291265F900523406 /* DspsFileReceive.m in Sources */,
+				9359733D243B53FD001AD657 /* CodelessMaxMtuCommand.m in Sources */,
+				14CD2E58242949170013484F /* CodelessLib.m in Sources */,
+				93A7D20E24361C2800AF61E7 /* CodelessBroadcasterRoleSetCommand.m in Sources */,
+				93597334243B373D001AD657 /* CodelessI2cWriteCommand.m in Sources */,
+				14F009CA244615360052C312 /* CodelessLogFile.m in Sources */,
+				93A7D20B2435FBE200AF61E7 /* CodelessBondingEntryTransferCommand.m in Sources */,
+				14CD2E8B242950AC0013484F /* CodelessLibLog.m in Sources */,
+				93597349243B7E45001AD657 /* CodelessCmdPlayCommand.m in Sources */,
+				93A7D22C2436419800AF61E7 /* CodelessDeviceInformationCommand.m in Sources */,
+				93A7D2072435E55C00AF61E7 /* CodelessBondingEntryStatusCommand.m in Sources */,
+				930BBA7F24377DB800BED0CF /* CodelessGapScanCommand.m in Sources */,
+				9359734C243B7FFE001AD657 /* CodelessPowerLevelConfigCommand.m in Sources */,
+				14CD2EAD243200110013484F /* CodelessTimerStartCommand.m in Sources */,
+				14CD2EAA2431F78E0013484F /* CodelessBasicCommand.m in Sources */,
+				93A7D22624362E3000AF61E7 /* CodelessCursorCommand.m in Sources */,
+				9359734F243B844A001AD657 /* CodelessPulseGenerationCommand.m in Sources */,
+				93A7D21124361CE700AF61E7 /* CodelessBinExitAckCommand.m in Sources */,
+				93A7D23224364F2900AF61E7 /* CodelessCmdGetCommand.m in Sources */,
+				93597357243B8F6E001AD657 /* CodelessResetCommand.m in Sources */,
+				9359735D243B9024001AD657 /* CodelessRssiCommand.m in Sources */,
+				93A7D1FA2434EC4200AF61E7 /* CodelessBatteryLevelCommand.m in Sources */,
+				93597340243B6FE7001AD657 /* CodelessMemStoreCommand.m in Sources */,
+				93597366243C85D5001AD657 /* CodelessSpiReadCommand.m in Sources */,
+				93A7D2042435E16700AF61E7 /* CodelessBondingEntryClearCommand.m in Sources */,
+				930BBA8B2438C8F800BED0CF /* CodelessHeartbeatCommand.m in Sources */,
+				14CD2EB6243200520013484F /* CodelessUartPrintCommand.m in Sources */,
+				931FBBB52434A8B0005E0902 /* CodelessAdvertisingDataBaseCommand.m in Sources */,
+				93597346243B7DED001AD657 /* CodelessPeripheralRoleSetCommand.m in Sources */,
+				93A7D1F12434E00100AF61E7 /* CodelessAdvertisingResponseCommand.m in Sources */,
+				14CD2EB0243200260013484F /* CodelessTimerStopCommand.m in Sources */,
+				93A7D2012435031A00AF61E7 /* CodelessBluetoothAddressCommand.m in Sources */,
+				930BBA942438DC2100BED0CF /* CodelessI2cReadCommand.m in Sources */,
+				93597331243B22E7001AD657 /* CodelessI2cScanCommand.m in Sources */,
+				93A7D2292436385F00AF61E7 /* CodelessDataLengthEnableCommand.m in Sources */,
+				1406154824743EFB00BFCF48 /* CodelessBinEscCommand.m in Sources */,
+				93A7D21724361EAC00AF61E7 /* CodelessBinRequestAckCommand.m in Sources */,
+				93A7D21424361E0C00AF61E7 /* CodelessBinExitCommand.m in Sources */,
+				930BBA7924375B9600BED0CF /* CodelessGapConnectCommand.m in Sources */,
+				93597360243B94BE001AD657 /* CodelessSecurityModeCommand.m in Sources */,
+				93A7D1F42434E4B900AF61E7 /* CodelessAdvertisingStartCommand.m in Sources */,
+				14F009D1244702770052C312 /* DspsFileSend.m in Sources */,
+				14CD2E88242950930013484F /* CodelessLibConfig.m in Sources */,
+				14CD2E97242950DF0013484F /* CodelessBluetoothManager.m in Sources */,
+				14CD2E9D242950F40013484F /* CodelessCommand.m in Sources */,
+				14CD2EBC24333F650013484F /* CodelessCommands.m in Sources */,
+				93A7D22F243648C100AF61E7 /* CodelessDeviceSleepCommand.m in Sources */,
+				930BBA7024365B6500BED0CF /* CodelessErrorReportingCommand.m in Sources */,
+				930BBA912438D80300BED0CF /* CodelessI2cConfigCommand.m in Sources */,
+				14F009D42447028E0052C312 /* DspsPeriodicSend.m in Sources */,
+				93A7D21D2436202700AF61E7 /* CodelessBinResumeCommand.m in Sources */,
+				93A7D2232436214D00AF61E7 /* CodelessConnectionParametersCommand.m in Sources */,
+				9359735A243B8FC4001AD657 /* CodelessResetIoConfigCommand.m in Sources */,
+				93597369243C8A17001AD657 /* CodelessSpiTransferCommand.m in Sources */,
+				930BBA8E2438D0C800BED0CF /* CodelessHostSleepCommand.m in Sources */,
+				9359736F243C9A14001AD657 /* CodelessCmdStoreCommand.m in Sources */,
+				93A7D1FE2434FB5100AF61E7 /* CodelessBaudRateCommand.m in Sources */,
+				9359736C243C968C001AD657 /* CodelessSpiWriteCommand.m in Sources */,
+				14CD2EB92432904E0013484F /* CodelessCustomCommand.m in Sources */,
+				14CD2E94242950D50013484F /* CodelessManager.m in Sources */,
+				93A7D220243620CD00AF61E7 /* CodelessCentralRoleSetCommand.m in Sources */,
+				93597363243C7803001AD657 /* CodelessSpiConfigCommand.m in Sources */,
+				930BBA822437860E00BED0CF /* CodelessGapStatusCommand.m in Sources */,
+				93597343243B78B6001AD657 /* CodelessPinCodeCommand.m in Sources */,
+				93A7D21A24361F7F00AF61E7 /* CodelessBinRequestCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		14CD2E5A242949170013484F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		14CD2E5B242949170013484F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14CD2E5D242949170013484F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14CD2E5E242949170013484F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14CD2E4E242949170013484F /* Build configuration list for PBXProject "CodelessLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14CD2E5A242949170013484F /* Debug */,
+				14CD2E5B242949170013484F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14CD2E5C242949170013484F /* Build configuration list for PBXNativeTarget "CodelessLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14CD2E5D242949170013484F /* Debug */,
+				14CD2E5E242949170013484F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14CD2E4B242949170013484F /* Project object */;
+}
